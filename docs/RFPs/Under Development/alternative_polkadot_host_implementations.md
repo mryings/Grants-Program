@@ -1,9 +1,13 @@
 # Alternative Polkadot Host Implementation
 
-* **Status:** [Under Development 1](https://github.com/LimeChain/java-host-research), [Under Development 2](https://github.com/w3f/Grants-Program/blob/master/applications/hybrid_node_research.md) 
-* **Proposer:** [Noc2](https://github.com/Noc2)
+:::caution
+This Request for Proposals is currently considered **under development**, meaning one or more grants have been signed to address the topic. We might be interested in additional implementations, but it’s better to double check this with the grants team.
+:::
 
-## Project Description :page_facing_up: 
+- **Status:** [Under Development 1](https://github.com/LimeChain/java-host-research), [Under Development 2](https://github.com/w3f/Grants-Program/blob/master/applications/hybrid_node_research.md)
+- **Proposer:** [Noc2](https://github.com/Noc2)
+
+## Project Description :page_facing_up:
 
 The architecture of Polkadot can be divided into two different parts, the Polkadot runtime and the Polkadot host. The Polkadot runtime is the core state transition logic of the chain and can be upgraded over the course of time and without the need for a hard fork. In comparison, the Polkadot host is the environment in which the runtime executes and is expected to remain stable and mostly static over the lifetime of Polkadot.
 
@@ -11,9 +15,9 @@ The Polkadot host interacts with the Polkadot runtime in limited, and well-speci
 
 **The Web3 Foundation is interested in supporting additional implementations of the Polkadot Host. If you are interested in this RFP, please reach out to spec@web3.foundation.**
 
-Currently the following implementations are under development: 
+Currently the following implementations are under development:
 
-- [Gossamer: A Go implementation of the Polkadot Host](https://github.com/ChainSafe/gossamer) 
+- [Gossamer: A Go implementation of the Polkadot Host](https://github.com/ChainSafe/gossamer)
 - [Kagome - C++ implementation of Polkadot Host](https://github.com/soramitsu/kagome)
 - [Polkadot Node Implementation in Rust](https://github.com/paritytech/polkadot)
 - [Smoldot - A Lightweight Substrate and Polkadot client in Rust](https://github.com/paritytech/smoldot)
@@ -27,4 +31,4 @@ For Polkadot Host Implementations, it’s probably too complex to structure the 
 - Consensus engine for GRANDPA and BABE.
 - Wasm interpreter and virtual machine.
 - Low level primitives for a blockchain, such as cryptographic primitives like hash functions.
-- Availability & Validity components to support parachains. 
+- Availability & Validity components to support parachains.
